@@ -29,6 +29,9 @@ function set_open_ports
 		shift
 	done
 	
+	#install denyhosts
+	aptitude install -y denyhosts
+	
 	#enable firewall
 	printf "y\ny\ny\n" | ufw enable
 }
