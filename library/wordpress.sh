@@ -171,6 +171,12 @@ EOF
 	wget http://downloads.wordpress.org/plugin/wp-super-cache.1.4.zip
 	unzip wp-super-cache.1.4.zip
 	rm -rf wp-super-cache.1.4.zip
+	
+	# install Wordfence Security plugin
+	cd ./wp-content/plugins/
+	wget http://downloads.wordpress.org/plugin/wordfence.4.0.3.zip
+	unzip wordfence.4.0.3.zip
+	rm -rf wordfence.4.0.3.zip
 
 
 	# specify wp-super-cache configuration
