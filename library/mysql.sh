@@ -12,8 +12,8 @@ function mysql_install {
 		return 1;
 	fi
 
-	echo "mysql-server-5.1 mysql-server/root_password password $1" | debconf-set-selections
-	echo "mysql-server-5.1 mysql-server/root_password_again password $1" | debconf-set-selections
+	echo "mysql-server-5.5 mysql-server/root_password password $1" | debconf-set-selections
+	echo "mysql-server-5.5 mysql-server/root_password_again password $1" | debconf-set-selections
 	aptitude install -y mysql-server mysql-client libmysqld-dev libmysqlclient-dev
 
 	echo "Sleeping while MySQL starts up for the first time..."
